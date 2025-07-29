@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fact_sales
+    description: Fact table for sales transactions
+    columns:
+      - name: saleskey
+        tests:
+          - not_null
+          - unique
+      - name: orderid
+        tests:
+          - not_null
+          - unique
+      - name: customerkey
+      - name: employeekey
+      - name: orderdatekey
+      - name: productkey
+      - name: quantity
+        tests:
+          - not_null
+      - name: extendedpriceamount
+        tests:
+          - not_null
+      - name: discountamount
+        tests:
+          - not_null
+      - name: soldamount
+        tests:
+          - not_null
